@@ -1,9 +1,0 @@
-{
-  "apiKey": "AIzaSyD1SEcAdiVaqypFTXPTQOy2kkx5C_lxd88",
-  "authDomain": "djangoverceltest.firebaseapp.com",
-  "databaseURL": "https://djangoverceltest-default-rtdb.europe-west1.firebasedatabase.app",
-  "projectId": "djangoverceltest",
-  "storageBucket": "djangoverceltest.appspot.com",
-  "messagingSenderId": "977975601323",
-  "appId": "1:977975601323:web:2ef247b506e13dcbdaefee"
-}
