@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-i8pnk_8778dn^9cqh3%=*ht3ibnk_-5uq2p1$5h&x-s0uqy78*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -62,26 +62,26 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangoProject5.wsgi.application'
-
+# WSGI_APPLICATION = 'djangoProject5.wsgi.application'
+WSGI_APPLICATION = 'djangoProject5.wsgi.app'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'neondb',
-#         'USER': 'AndrejWiseman',
-#         'PASSWORD': 'tq0QxBuD3cbs',
-#         'HOST': 'ep-falling-paper-02629520.eu-central-1.aws.neon.tech',
-#         'PORT': '5432',
-#         'OPTIONS': {
-#             'sslmode': 'require',
-#         },
-#     }
-# }
-from .db import * # noqa
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'neondb',
+        'USER': 'AndrejWiseman',
+        'PASSWORD': 'tq0QxBuD3cbs',
+        'HOST': 'ep-falling-paper-02629520.eu-central-1.aws.neon.tech',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
+    }
+}
+# from .db import * # noqa
 
 
 # Password validation
