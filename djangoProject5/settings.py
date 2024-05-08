@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-i8pnk_8778dn^9cqh3%=*ht3ibnk_-5uq2p1$5h&x-s0uqy78*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -71,16 +71,15 @@ WSGI_APPLICATION = 'djangoProject5.wsgi.app'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'neondb',
-        'USER': 'AndrejWiseman',
-        'PASSWORD': 'tq0QxBuD3cbs',
-        'HOST': 'ep-falling-paper-02629520.eu-central-1.aws.neon.tech',
-        'PORT': '5432',
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
+        'NAME': 'postgres',
+        'USER': 'postgres.nwfdyyoyqkaznunqseqc',
+        'PASSWORD': '6giVAByFR1gKjTqC',
+        'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
+        'PORT': '5432'
     }
 }
+
+# user=postgres.nwfdyyoyqkaznunqseqc password=[YOUR-PASSWORD] host=aws-0-eu-central-1.pooler.supabase.com port=5432 dbname=postgres
 # from .db import * # noqa
 
 
